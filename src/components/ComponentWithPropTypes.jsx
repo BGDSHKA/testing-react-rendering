@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class cmpnt extends Component {
+export class ComponentWithPropTypes extends Component {
     static propTypes = {
         prop: PropTypes
     }
@@ -10,7 +10,7 @@ export class cmpnt extends Component {
     render() {
         return (
             <div>
-                
+                test
             </div>
         )
     }
@@ -24,4 +24,4 @@ const mapDispatchToProps = {
     
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(cmpnt)
+export default connect(mapStateToProps, mapDispatchToProps)(ComponentWithPropTypes)
