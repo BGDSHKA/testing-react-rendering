@@ -1,27 +1,22 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 export class ComponentWithPropTypes extends Component {
-    static propTypes = {
-        prop: PropTypes
-    }
+  static propTypes = {
+    prop: PropTypes,
+  };
 
-    render() {
-        return (
-            <div>
-                test
-            </div>
-        )
-    }
+  render() {
+    return <div>test</div>;
+  }
 }
 
-const mapStateToProps = (state) => ({
-    
-})
+const mapStateToProps = (state) => ({});
 
-const mapDispatchToProps = {
-    
-}
+const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(ComponentWithPropTypes)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ComponentWithPropTypes);
