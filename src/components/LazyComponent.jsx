@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LazyComponent = () => {
-    return (
-        <div>
-            test
-        </div>
-    )
-}
+  return <div>test</div>;
+};
 
-export default LazyComponent
+export default LazyComponent;
